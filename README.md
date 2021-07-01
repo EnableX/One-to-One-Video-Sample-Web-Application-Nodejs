@@ -12,7 +12,7 @@ https://developer.enablex.io/release-notes/#cross-compatibility
 
 ## 1. Important!
 
-When developing a Node Application with EnxRtc.js make sure to include the updated EnxRtc.js polyfills for RTCPeerConnection and getUserMedia otherwise your application will not work in web browsers.
+When developing a Client Application with EnxRtc.js ( present in client/js ), make sure to replace the old EnxRtc.js with updated EnxRtc.js polyfills from https://developer.enablex.io/video-api/client-api/web-toolkit/ for RTCPeerConnection and getUserMedia. Otherwise your application will not work in web browsers.
 
 
 ## 2. Trial
@@ -32,7 +32,7 @@ Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/
 * Register with EnableX https://portal.enablex.io/trial-sign-up/
 * Create your Application
 * Get your App ID and App Key delivered to your registered email
-* Clone or download this repository `git clone https://github.com/EnableX/One-to-One-Video-Chat-Sample-Web-Application.git`
+* Clone or download this repository `git clone https://github.com/EnableX/One-to-One-Video-Sample-Web-Application-Nodejs.git --recursive`
 ### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Please note `--recursive` option. Repo should be cloned recursively to download `client` app. 
 
 
@@ -47,13 +47,28 @@ However you may use self-signed Certificate to run this application locally. The
 
 The following below can also be used to create a self-signed certificate. 
 
-`cd One-to-One-Video-Chat-Sample-Web-Application`
 
-`mkdir certs`
+Mac/Linux
+```
+  `cd One-to-One-Video-Sample-Web-Application-Nodejs`
 
-`sudo openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
+  `mkdir certs`
 
-`sudo chmod 755 ./certs/localhost.*`
+  `sudo openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
+
+  `sudo chmod 755 ./certs/localhost.*`
+```
+
+Windows(Use Git Bash)
+```
+  `cd One-to-One-Video-Sample-Web-Application-Nodejs`
+
+  `mkdir certs`
+
+  `openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
+
+  `chmod 755 ./certs/localhost.*`
+```
 
 #### 3.1.3 Configure
 
@@ -79,6 +94,7 @@ vcxconfig.Certificate = {
 
 vcxconfig.SERVER_API_SERVER = {
   host: 'api.enablex.io',             // Hosted EnableX Server API Domain Name
+  port: '',
 };
 
 vcxconfig.clientPath  = "../client";    // UI files location
