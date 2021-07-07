@@ -29,9 +29,9 @@ Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/
 
 #### 3.1.1 App Id and App Key 
 
-* Register with EnableX https://portal.enablex.io/trial-sign-up/
-* Create your Application
-* Get your App ID and App Key delivered to your registered email
+* Create a free account on EnableX [https://portal.enablex.io/cpaas/trial-sign-up/]
+* Create your Project
+* Get the App ID and App Key generated against the Project
 * Clone or download this repository `git clone https://github.com/EnableX/One-to-One-Video-Sample-Web-Application-Nodejs.git --recursive`
 ### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Please note `--recursive` option. Repo should be cloned recursively to download `client` app. 
 
@@ -51,22 +51,18 @@ The following below can also be used to create a self-signed certificate.
 Mac/Linux
 ```
   `cd One-to-One-Video-Sample-Web-Application-Nodejs`
-
   `mkdir certs`
-
+  `cd certs`
   `sudo openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
-
   `sudo chmod 755 ./certs/localhost.*`
 ```
 
 Windows(Use Git Bash)
 ```
   `cd One-to-One-Video-Sample-Web-Application-Nodejs`
-
   `mkdir certs`
-
+  `cd certs`
   `openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
-
   `chmod 755 ./certs/localhost.*`
 ```
 
@@ -111,9 +107,10 @@ Run `npm install --save` to build the project and the build artifacts will be st
 
 Run `node server.js` inside `server` folder to start your server. 
 
-`cd server`
-
-`node server.js`
+```
+  `cd server`
+  `node server.js`
+```
 Server started. Listening on Port 4443
 
 #### 3.2.2 Test Video Call
