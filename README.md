@@ -52,7 +52,6 @@ Mac/Linux
 ```
   `cd One-to-One-Video-Sample-Web-Application-Nodejs`
   `mkdir certs`
-  `cd certs`
   `sudo openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
   `sudo chmod 755 ./certs/localhost.*`
 ```
@@ -61,7 +60,6 @@ Windows(Use Git Bash)
 ```
   `cd One-to-One-Video-Sample-Web-Application-Nodejs`
   `mkdir certs`
-  `cd certs`
   `openssl req -x509 -newkey rsa:4096 -keyout ./certs/localhost.key -out ./certs/localhost.crt -days 10000 -nodes`
   `chmod 755 ./certs/localhost.*`
 ```
