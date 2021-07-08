@@ -33,9 +33,9 @@ vcxconfig.SERViCE={
 // SSL Certificate (Self Signed or Registered)
 
 vcxconfig.Certificate={
-    ssl_key: "../cert/yourdomain.key",               // Path to .key file
-    ssl_cert : "../cert/yourdomain.crt",             // Path to .crt file
-    sslCaCerts : ["../cert/yourdomain.ca-bundle"]    // Path to CA[chain]
+    ssl_key: "../certs/localhost.key",               // Path to .key file
+    ssl_cert : "../certs/localhost.crt",             // Path to .crt file
+//  sslCaCerts : ["../certs/yourdomain.ca-bundle"]    // Path to CA[chain]
 };
 
 
