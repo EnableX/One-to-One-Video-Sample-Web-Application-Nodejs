@@ -43,7 +43,8 @@ var obj = {
         "wait_moderator": false,
         "quality": "SD",
         "adhoc": false,
-        "mode": "group"
+        "mode": "group",
+        "canvas":true
     },
     "sip": {
         "enabled": false
