@@ -1,14 +1,15 @@
-# 1-to-1 RTC: A Sample Web App with EnableX Web Toolkit
+# Building a 1-to-1 Real-Time Video Chat Web App with EnableX Web Toolkit and Node.js
 
-The Sample Web App demonstrates the use of APIs for EnableX platform to carry out 1-to-1 RTC (Real Time Communication). The main motivation behind this application is to demonstrate usage of APIs and allow developers to ramp up on app by hosting on their own devices instead of directly using servers.
+1-to-1 RTC Web App: EnableX Web Toolkit 
 
-RTC Applications hosted on EnableX platform run natively on supported set of web browsers without any additional plugin downloads. 
+Explore a Sample Web App showcasing the utilization of EnableX platform APIs for conducting seamless 1-to-1 RTC (Real-Time Communication). This application is designed to illustrate API usage and facilitate developers in accelerating app development by hosting it on their personal devices, without the need for external servers. 
 
-This basic 1-to-1 Video Chat Application is developed using HTML, CSS, Bootstrap v4.0.0-alpha.6, JAVA Script, jQuery, Node V8.9.1 and EnxRtc (The EnableX Web Toolkit). 
+RTC Applications on the EnableX platform operate seamlessly on supported web browsers, eliminating the need for additional plugin downloads. 
+
+This basic 1-to-1 Video Chat Application is created using HTML, CSS, Bootstrap v4.0.0-alpha.6, JavaScript, jQuery, Node V8.9.1, and EnxRtc (EnableX Web Toolkit) 
 
 >The details of the supported set of web browsers can be found here:
 https://developer.enablex.io/release-notes/#cross-compatibility
-
 
 ## 1. Important!
 
